@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Manejo del Dom</h1>
+	<p id="que-es">
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis ipsam reprehenderit vero natus animi nihil, ipsum consequatur debitis architecto aliquid ducimus modi commodi molestiae ex cum repellat accusantium, quia?
+	</p>
+
+	<nav id="menu">
+		<ul>
+			<li><a href="#">Seccion 1</a></li>
+			<li><a href="#">Seccion 2</a></li>
+			<li><a href="#">Seccion 3</a></li>
+			<li><a href="#">Seccion 4</a></li>
+			<li><a href="#">Seccion 5</a></li>
+		</ul>
+	</nav>
+	<input type="text" name="nombres" placeholder="Nombre">
+	<a class="link-dom" style="background-color: #f7df1e; color: #222;" href="dom.html" data-description="Document Object Model">DOM</a>
+	<section class="cards">
+      <figure class="cards">
+      	<img src="https://placeimg.com/200/200/tech" alt="Tech">
+      	<figcaption>Tech</figcaption>
+      </figure>
+     <figure class="cards">
+      	<img src="https://placeimg.com/200/200/animals" alt="animals">
+      	<figcaption>Animals</figcaption>
+      </figure>
+      <figure class="cards">
+      	<img src="https://placeimg.com/200/200/people" alt="people">
+      	<figcaption>People</figcaption>
+      </figure>
+      <figure class="cards">
+      	<img src="https://placeimg.com/200/200/nature" alt="nature">
+      	<figcaption>Nature</figcaption>
+	</section>
+	<script>
+      // console.log(document.getElementsByName('nombres'));
+
+      console.log(document.getElementsByClassName('cards'));
+      console.log(document.querySelectorAll('figcaption'));
+      console.log(document.documentElement.lang);
+       
+
+      const $linkDOM = document.querySelector('.link-dom');
+      // $ hace referencia a la varible del dom
+
+      $linkDOM.setAttribute('target', '_blank');
+      $linkDOM.setAttribute('rel', 'noopener'); //
+
+      $linkDOM.removeAttribute('rel'); //
+      console.log($linkDOM.hasAttribute("rel"));
+     
+//      Data-Attributes
+      console.log($linkDOM.getAttribute("data-description"));
+      console.log($linkDOM.dataset);
+       
+       console.log($linkDOM.style);
+       console.log($linkDOM.getAttribute("style"));
+
+
+       console.log($linkDOM.style.backgrounColor ="red")
+
+
+	</script>
+</body>
+</html>https://placeimg.com/200/200/people
