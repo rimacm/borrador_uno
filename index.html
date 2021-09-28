@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+
+    <div id="div1">
+        <p id="p01">primero</p>
+        <p id="p02">segundo texto</p>
+        <p> agregado </p>
+
+         <!-- <button onclick="myFunction()">REMOVE</button> -->
+
+
+        <p id="demo"></p>
+    </div>
+<button data-color='red'>Boton 1</button>
+<button data-color='green'>Boton 2</button>
+<button data-color='yellow'>Boton 3</button>
+<button data-color='pink'>boton 4</button>
+<button data-color='purple'>boton 5</button>
+<button data-color='cyan'>boton 6</button>
+<button data-color='orange'>boton 7</button>
+<button data-color='#0f0'>boton 8</button>
+<button >por defecto</button>
+
+
+    <script> 
+    let boton = document.querySelectorAll('button');
+
+        boton.forEach(function (item) {
+               item.addEventListener('click', function() { 
+               item.style.backgroundColor = item.dataset.color || 'fuchsia';
+               });
+        });
+        
+    //       boton[0].addEventListener('click', function() {
+    //           boton[0].style.backgroundColor = 'red';
+    //       });   
+    //       boton[1].addEventListener('click', function() {
+    //           boton[1].style.backgroundColor = 'green';
+    //       });   
+    //      boton[2].addEventListener('click', function() {
+    //           boton[2].style.backgroundColor = 'yellow';
+    //       })
+    //     const myNode = document.querySelectorAll('p');
+    //     document.getElementById('demo').innerHTML = " THE DOCUMENT CONTAINS " + myNode.length + " parrafo"
+
+
+    //    let parent = document.getElementById('div1');
+    //    let child = document.getElementById('p02');
+    //    let para = document.createElement('p');
+    //    let node = document.createTextNode('reemplazando el ..');
+    //     para.appendChild(node);
+    //     parent.replaceChild(para, child);
+
+    
+    //    document.getElementById('p01').style.color = 'blue';
+    
+    </script>
+</body>
+</html>
+
+
+    
+     
+
+ 
